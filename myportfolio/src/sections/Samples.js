@@ -27,6 +27,7 @@ const Samples = () => {
                 <p>Yahoo: </p>
                 <p>LinkedIn: </p>
                 <p>GitHub: </p>
+                <h2>Let's create</h2>
             </div>
         </div>
     </div>

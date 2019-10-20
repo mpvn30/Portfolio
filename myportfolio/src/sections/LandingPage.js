@@ -3,7 +3,7 @@ import React from 'react';
 const LandingPage = () => {
     return (
         <div className="landing-page portfolio-experiment">
-            <a className="landing-button">
+            <a className="landing-button" href="#about">
                 <span class="text">View Profile</span>
                 <span class="line -right"></span>
                 <span class="line -top"></span>

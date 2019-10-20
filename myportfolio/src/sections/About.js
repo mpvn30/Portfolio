@@ -1,10 +1,14 @@
 import React from 'react';
 import AboutImg from '../about-img.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHtml5, faCss3, faJs} from '@fortawesome/free-brands-svg-icons'
+
+
 
 const About = () => {
     return(
         <>
-        <div className="about">
+        <div className="about" id="about">
             <div className="about-header">
                 <h1>Hello! I am Mike, I am a Software Developer.</h1>
             </div>
@@ -17,22 +21,36 @@ const About = () => {
                 </p>
                 </div>
             </div>
+            <div className="about-experiment">
+                <a className="landing-button" href="#about">
+                    <span class="text">View Samples</span>
+                    <span class="line -right"></span>
+                    <span class="line -top"></span>
+                    <span class="line -left"></span>
+                    <span class="line -bottom"></span>
+                </a>
+            </div>
         </div>
         <div className="skills">
-            <div className="skills-container">
-                <div>Icon</div>
-                <h3>HTML</h3>
-                <p className="skills-sub">Semantic HTML, Pug</p>
+            <div className="skills-header">
+                <h3 className="skills-h3">Stack</h3>
             </div>
-            <div className="skills-container">
-                <div>Icon</div>
-                <h3>CSS</h3>
-                <p className="skills-sub">LESS, SASS/SCSS, Bootstrap, Reactstrap, styled-components</p>
-            </div>
-            <div className="skills-container">
-                <div>Icon</div>
-                <h3>JavaScript</h3>
-                <p className="skills-sub">React.js</p>
+            <div className="skills-content">
+                <div className="skills-container">
+                    <div className="skill-icons"><FontAwesomeIcon icon={faHtml5} size="3x" /></div>
+                    <h3 className="skills-title">HTML</h3>
+                    <p className="skills-sub">Semantic HTML, Pug</p>
+                </div>
+                <div className="skills-container">
+                    <div className="skill-icons"><FontAwesomeIcon icon={faCss3} size="3x" /></div>
+                    <h3 className="skills-title">CSS</h3>
+                    <p className="skills-sub">LESS, SASS/SCSS, Bootstrap, Reactstrap</p>
+                </div>
+                <div className="skills-container">
+                    <div className="skill-icons"><FontAwesomeIcon icon={faJs} size="3x"/></div>
+                    <h3 className="skills-title">JavaScript</h3>
+                    <p className="skills-sub">React.js, Node.js</p>
+                </div>
             </div>
         </div>
         </>

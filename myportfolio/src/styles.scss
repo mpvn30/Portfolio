@@ -9,6 +9,9 @@ $color : #149cdb;
 html{
   scroll-behavior: smooth;
 }
+.App{
+  background-color: rgb(255, 255, 255);
+}
 .portfolio-experiment {
   background: #2d2d2d;
   display: flex;
@@ -358,4 +361,24 @@ p{
   padding-bottom: 10px;
   width: 45%;
   border-bottom: 1px solid white;
+}
+
+/****************** Samples *************************/
+
+.samples-container{
+  width: 1000px;
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+.samples, .contact-container{ 
+    width: 500px;
+    line-height: 2;
+}
+
+.contact{
+  p {
+    font-size: 1.2rem;
+  }
 }

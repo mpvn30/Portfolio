@@ -49,7 +49,7 @@ const About = () => {
                 <div className="skills-container">
                     <div className="skill-icons"><FontAwesomeIcon icon={faJs} size="3x"/></div>
                     <h3 className="skills-title">JavaScript</h3>
-                    <p className="skills-sub">React.js, Node.js</p>
+                    <p className="skills-sub">React.js, Node.js, Express</p>
                 </div>
             </div>
         </div>

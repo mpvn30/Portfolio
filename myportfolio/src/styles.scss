@@ -367,18 +367,67 @@ p{
 
 .samples-container{
   width: 1000px;
-  height: 70vh;
-  margin: 0 auto;
+  height: 50vh;
+  margin: 10vh auto;
+  border: 5px double  rgb(25, 25, 26);
   display: flex;
+  background: rgb(241, 241, 241);
 }
 
 .samples, .contact-container{ 
     width: 500px;
-    line-height: 2;
+    line-height: 3;
+    margin: 20px;
 }
 
 .contact{
   p {
     font-size: 1.2rem;
   }
+}
+.samples-container  {
+  a {
+    color: #213999;
+    font-weight: 500;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    transition: transform 0.2s;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: 0 0.25em;
+    font-size:1.2rem;
+    }
+    a:hover {
+    color: #213999;
+    }
+    a::before,
+    a::after {
+    position: absolute;
+    top: 0;
+    font-weight: 100;
+    font-size: 150%;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
+    }
+    a::before {
+    left: -0.1em;
+    content: '[';
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    }
+    a::after {
+    right: -0.1em;
+    content: ']';
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    }
+    a:hover::before,
+    a:hover::after {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
 }

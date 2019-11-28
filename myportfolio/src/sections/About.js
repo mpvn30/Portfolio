@@ -22,7 +22,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about-experiment">
-                <a className="landing-button" href="#about">
+                <a className="landing-button" href="#contact">
                     <span class="text">View Samples</span>
                     <span class="line -right"></span>
                     <span class="line -top"></span>
